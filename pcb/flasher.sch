@@ -1,0 +1,389 @@
+EESchema Schematic File Version 4
+LIBS:thermal-station-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6525 3300 2    50   Input ~ 0
+TXD
+Text GLabel 6525 3200 2    50   Input ~ 0
+RXD
+$Comp
+L power:+5V #PWR012
+U 1 1 5C24ED56
+P 4675 2800
+F 0 "#PWR012" H 4675 2650 50  0001 C CNN
+F 1 "+5V" H 4690 2973 50  0000 C CNN
+F 2 "" H 4675 2800 50  0001 C CNN
+F 3 "" H 4675 2800 50  0001 C CNN
+	1    4675 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 2800 4675 2900
+Wire Wire Line
+	4525 3300 4675 3300
+$Comp
+L power:Earth #PWR010
+U 1 1 5C557707
+P 4225 4000
+F 0 "#PWR010" H 4225 3750 50  0001 C CNN
+F 1 "Earth" H 4225 3850 50  0001 C CNN
+F 2 "" H 4225 4000 50  0001 C CNN
+F 3 "~" H 4225 4000 50  0001 C CNN
+	1    4225 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4225 3900 4225 3950
+$Comp
+L Interface_USB:CH340G U2
+U 1 1 5C24F530
+P 5675 3600
+F 0 "U2" H 5825 3000 50  0000 C CNN
+F 1 "CH340G" H 5925 2900 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5725 3050 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 5325 4400 50  0001 C CNN
+	1    5675 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5275 3300
+$Comp
+L power:Earth #PWR016
+U 1 1 5C2A318F
+P 5675 4450
+F 0 "#PWR016" H 5675 4200 50  0001 C CNN
+F 1 "Earth" H 5675 4300 50  0001 C CNN
+F 2 "" H 5675 4450 50  0001 C CNN
+F 3 "~" H 5675 4450 50  0001 C CNN
+	1    5675 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 4450 5675 4200
+Wire Wire Line
+	5575 3000 5575 2700
+Wire Wire Line
+	5575 2600 5675 2600
+Wire Wire Line
+	5675 2600 5675 2700
+$Comp
+L power:+3.3V #PWR015
+U 1 1 5C2ABA2D
+P 5575 2550
+F 0 "#PWR015" H 5575 2400 50  0001 C CNN
+F 1 "+3.3V" H 5590 2723 50  0000 C CNN
+F 2 "" H 5575 2550 50  0001 C CNN
+F 3 "" H 5575 2550 50  0001 C CNN
+	1    5575 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 2600 5575 2700
+Connection ~ 5575 2600
+$Comp
+L Device:C_Small C5
+U 1 1 5C2B0616
+P 5125 2850
+F 0 "C5" H 5240 2896 50  0000 L CNN
+F 1 "10uF" H 5240 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5163 2700 50  0001 C CNN
+F 3 "~" H 5125 2850 50  0001 C CNN
+	1    5125 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 2750 5125 2700
+Wire Wire Line
+	5125 2700 5575 2700
+Connection ~ 5575 2700
+Wire Wire Line
+	5575 2600 5575 2550
+$Comp
+L power:Earth #PWR013
+U 1 1 5C2C1603
+P 5125 3000
+F 0 "#PWR013" H 5125 2750 50  0001 C CNN
+F 1 "Earth" H 5125 2850 50  0001 C CNN
+F 2 "" H 5125 3000 50  0001 C CNN
+F 3 "~" H 5125 3000 50  0001 C CNN
+	1    5125 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5C2C634A
+P 6925 2850
+F 0 "C7" H 7040 2896 50  0000 L CNN
+F 1 "10uF" H 7040 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6963 2700 50  0001 C CNN
+F 3 "~" H 6925 2850 50  0001 C CNN
+	1    6925 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR017
+U 1 1 5C55770D
+P 6925 3000
+F 0 "#PWR017" H 6925 2750 50  0001 C CNN
+F 1 "Earth" H 6925 2850 50  0001 C CNN
+F 2 "" H 6925 3000 50  0001 C CNN
+F 3 "~" H 6925 3000 50  0001 C CNN
+	1    6925 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 2750 6925 2700
+Wire Wire Line
+	6925 2700 5675 2700
+Connection ~ 5675 2700
+Wire Wire Line
+	5675 2700 5675 3000
+Wire Wire Line
+	4525 3500 5275 3500
+Wire Wire Line
+	4525 3600 5275 3600
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 5C55770E
+P 4925 4000
+F 0 "Y1" H 4925 3700 50  0000 C CNN
+F 1 "HC-49" H 4925 3650 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm_HandSoldering" H 4925 4000 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/12mhz-hc-49sm" H 4925 4000 50  0001 C CNN
+	1    4925 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 4000 5175 4000
+Wire Wire Line
+	4825 4000 4625 4000
+Wire Wire Line
+	4625 4000 4625 3800
+$Comp
+L Device:C_Small C4
+U 1 1 5C55770F
+P 4625 4300
+F 0 "C4" H 4425 4350 50  0000 L CNN
+F 1 "22pF" H 4375 4250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4625 4300 50  0001 C CNN
+F 3 "~" H 4625 4300 50  0001 C CNN
+	1    4625 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5C557710
+P 5175 4300
+F 0 "C6" H 5267 4346 50  0000 L CNN
+F 1 "22pF" H 5267 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5175 4300 50  0001 C CNN
+F 3 "~" H 5175 4300 50  0001 C CNN
+	1    5175 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 4200 4625 4000
+Connection ~ 4625 4000
+Wire Wire Line
+	5175 4200 5175 4000
+Connection ~ 5175 4000
+Wire Wire Line
+	5175 4000 5275 4000
+$Comp
+L power:Earth #PWR014
+U 1 1 5C557711
+P 5175 4450
+F 0 "#PWR014" H 5175 4200 50  0001 C CNN
+F 1 "Earth" H 5175 4300 50  0001 C CNN
+F 2 "" H 5175 4450 50  0001 C CNN
+F 3 "~" H 5175 4450 50  0001 C CNN
+	1    5175 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR011
+U 1 1 5C557712
+P 4625 4450
+F 0 "#PWR011" H 4625 4200 50  0001 C CNN
+F 1 "Earth" H 4625 4300 50  0001 C CNN
+F 2 "" H 4625 4450 50  0001 C CNN
+F 3 "~" H 4625 4450 50  0001 C CNN
+	1    4625 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 4450 5175 4400
+Wire Wire Line
+	4625 4450 4625 4400
+Wire Wire Line
+	5125 2950 5125 3000
+Wire Wire Line
+	6925 2950 6925 3000
+NoConn ~ 4525 3700
+$Comp
+L Device:D_Schottky_Small D1
+U 1 1 5C557713
+P 4675 3000
+F 0 "D1" V 4629 3068 50  0000 L CNN
+F 1 "B240A-E3" V 4720 3068 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 4675 3000 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/b240a-e3-61t" V 4675 3000 50  0001 C CNN
+	1    4675 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4675 3100 4675 3300
+NoConn ~ 6075 3500
+NoConn ~ 6075 3600
+NoConn ~ 6075 3700
+NoConn ~ 6075 3800
+$Comp
+L Transistor_BJT:S8050 Q2
+U 1 1 5C557714
+P 7125 4400
+F 0 "Q2" H 7316 4354 50  0000 L CNN
+F 1 "S8050" H 7316 4445 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7325 4325 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 7125 4400 50  0001 L CNN
+	1    7125 4400
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:S8050 Q1
+U 1 1 5C557715
+P 7125 3750
+F 0 "Q1" H 7316 3796 50  0000 L CNN
+F 1 "S8050" H 7316 3705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7325 3675 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 7125 3750 50  0001 L CNN
+	1    7125 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7225 4750 3    50   Input ~ 0
+GPIO0
+Text GLabel 7225 3400 1    50   Input ~ 0
+RST
+Wire Wire Line
+	7225 3550 7225 3400
+Wire Wire Line
+	7225 4750 7225 4600
+$Comp
+L Device:R R8
+U 1 1 5C557716
+P 6675 3750
+F 0 "R8" V 6575 3700 50  0000 C CNN
+F 1 "10K" V 6575 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6605 3750 50  0001 C CNN
+F 3 "~" H 6675 3750 50  0001 C CNN
+	1    6675 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5C557717
+P 6675 4400
+F 0 "R9" V 6575 4350 50  0000 C CNN
+F 1 "10K" V 6575 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6605 4400 50  0001 C CNN
+F 3 "~" H 6675 4400 50  0001 C CNN
+	1    6675 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6075 4000 6275 4000
+Wire Wire Line
+	6275 4000 6275 4400
+Wire Wire Line
+	6275 4400 6375 4400
+Wire Wire Line
+	6825 4400 6925 4400
+Wire Wire Line
+	6075 3900 6275 3900
+Wire Wire Line
+	6275 3900 6275 3750
+Wire Wire Line
+	6275 3750 6375 3750
+Wire Wire Line
+	6825 3750 6925 3750
+Wire Wire Line
+	7225 3950 7225 4050
+Wire Wire Line
+	7225 4050 6375 4150
+Wire Wire Line
+	6375 4150 6375 4400
+Connection ~ 6375 4400
+Wire Wire Line
+	6375 4400 6525 4400
+Wire Wire Line
+	7225 4200 7225 4150
+Wire Wire Line
+	7225 4150 6375 4050
+Wire Wire Line
+	6375 4050 6375 3750
+Connection ~ 6375 3750
+Wire Wire Line
+	6375 3750 6525 3750
+$Comp
+L Device:R R6
+U 1 1 5C557718
+P 6325 3200
+F 0 "R6" V 6225 3100 50  0000 C CNN
+F 1 "470" V 6225 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6255 3200 50  0001 C CNN
+F 3 "~" H 6325 3200 50  0001 C CNN
+	1    6325 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C557719
+P 6325 3300
+F 0 "R7" V 6425 3200 50  0000 C CNN
+F 1 "470" V 6425 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6255 3300 50  0001 C CNN
+F 3 "~" H 6325 3300 50  0001 C CNN
+	1    6325 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6075 3200 6175 3200
+Wire Wire Line
+	6075 3300 6175 3300
+Wire Wire Line
+	6475 3200 6525 3200
+Wire Wire Line
+	6475 3300 6525 3300
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5C557704
+P 4225 3500
+F 0 "J1" H 4225 4000 50  0000 C CNN
+F 1 "USB" H 4225 3900 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 4375 3450 50  0001 C CNN
+F 3 "~" H 4375 3450 50  0001 C CNN
+	1    4225 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 3900 4125 3950
+Wire Wire Line
+	4125 3950 4225 3950
+Connection ~ 4225 3950
+Wire Wire Line
+	4225 3950 4225 4000
+Wire Wire Line
+	4625 3800 5275 3800
+NoConn ~ 4925 3875
+NoConn ~ 4925 4125
+$EndSCHEMATC
